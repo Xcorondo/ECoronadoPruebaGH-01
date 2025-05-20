@@ -7,4 +7,5 @@ EditorBuildSettings:
   m_Scenes: []
   m_configObjects:
     com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: c0f08e49b311db344aa9e6f4af768d9a, type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 9c6d93ee0cc99524c9c1133351cc973f, type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 07a8ab410ffacb04d87b85e7a362c067, type: 2}
