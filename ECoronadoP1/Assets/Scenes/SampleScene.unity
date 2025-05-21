@@ -750,7 +750,7 @@ MonoBehaviour:
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
-    m_Reference: {fileID: 187161793506945269, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+    m_Reference: {fileID: -8061240218431744966, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   m_SelectActionValue:
     m_UseReference: 1
     m_Action:
@@ -1658,6 +1658,7 @@ GameObject:
   m_Component:
   - component: {fileID: 831929447}
   - component: {fileID: 831929448}
+  - component: {fileID: 831929449}
   m_Layer: 0
   m_Name: RigthHand
   m_TagString: Untagged
@@ -1694,6 +1695,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb3acaa560a397d4ab8072c3c59027c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &831929449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 831929446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 129be721b27355748af450fda73764ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  XRRayInteractor_RightHand_Grab: {fileID: 858126112}
+  XRRayInteractor_RightHand_Teleport: {fileID: 685305734}
+  PalancaControlDerecho: {fileID: -8061240218431744966, guid: c348712bda248c246b8c49b3db54643f, type: 3}
 --- !u!1 &858126107
 GameObject:
   m_ObjectHideFlags: 0
@@ -2984,6 +3000,34 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8429981633443581382, guid: 6c8af5c8012f01440af6cb2bc3eb987c, type: 3}
   m_PrefabInstance: {fileID: 864600785}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2091647110 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8019113040476425624, guid: b484877e3cf663740b3a5a89ee08ac92, type: 3}
+  m_PrefabInstance: {fileID: 8340145288694307235}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2091647118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2091647110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0a1302d0d134fa8a2a5b3bf4aec3c20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_PermittedDisplacementAxes: -1
+  m_ConstrainedAxisDisplacementMode: 1
+  m_TwoHandedRotationMode: 1
+  m_AllowOneHandedScaling: 1
+  m_AllowTwoHandedScaling: 1
+  m_OneHandedScaleSpeed: 0.5
+  m_ThresholdMoveRatioForScale: 0.05
+  m_ClampScaling: 1
+  m_MinimumScaleRatio: 0.25
+  m_MaximumScaleRatio: 2
+  m_ScaleMultiplier: 0.25
 --- !u!1 &2126916484
 GameObject:
   m_ObjectHideFlags: 0
@@ -3083,6 +3127,14 @@ PrefabInstance:
       value: Terreno
       objectReference: {fileID: 0}
     - target: {fileID: 1516346008453790092, guid: b484877e3cf663740b3a5a89ee08ac92, type: 3}
+      propertyPath: m_SelectMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1516346008453790092, guid: b484877e3cf663740b3a5a89ee08ac92, type: 3}
+      propertyPath: m_UseDynamicAttach
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1516346008453790092, guid: b484877e3cf663740b3a5a89ee08ac92, type: 3}
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 166214037}
@@ -3093,7 +3145,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8019113040476425624, guid: b484877e3cf663740b3a5a89ee08ac92, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2091647118}
   m_SourcePrefab: {fileID: 100100000, guid: b484877e3cf663740b3a5a89ee08ac92, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
